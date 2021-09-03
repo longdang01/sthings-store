@@ -1,0 +1,1 @@
+- Self design with HTML, CSS, JS, Slick
