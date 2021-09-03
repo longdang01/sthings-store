@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthings</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="./assets/icons/themify-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Slide -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-topbar">
+                <div class="container-fluid">
+                    <div class="topbar row d-flex align-items-center">
+                        <h3 class="header-brand col-lg-3"><a href="#">Sthings</a></h3>
+                        <div style="padding: 1rem 0" class="header-search 
+                        d-flex align-items-center col-lg-6">
+                            <div class="search-categories d-flex align-items-center
+                            justify-content-center">
+                                <div class="topbar-categories position-relative">
+                                    <a href="#" class="d-flex align-items-center
+                                    justify-content-between btn btn-select-categories">
+                                        <span class="select-categories-focus">
+                                            Chọn danh mục</span>
+                                        <i class="ti-angle-down mt-1"></i>
+                                    </a>
+                                    <ul class="nav-list nav-topbar-categories">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Áo</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Quần</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Giày</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Phụ kiện</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Mũ</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Balo - Túi - Ví</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tất cả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search-destination d-flex align-items-center 
+                            flex-fill border-start-0">
+                                <input type="text" class="keyword-destination
+                                flex-fill" placeholder="Tìm kiếm sản phẩm...">
+                                <button type="button" class="btn 
+                                btn-dark btn-topbar-search">Tìm kiếm</button>
+                            </div>
+                        </div>
+    
+                        <ul class="nav-list nav-topbar-options
+                        d-flex justify-content-end col-lg-3">
+                            <li class="nav-item"><a href="#" class="nav-link 
+                                btn-topbar-cart position-relative">
+                                <i class="ti-shopping-cart"></i>
+                                <span class="topbar-cart-amount
+                                d-flex justify-content-center align-items-center">0</span></a>
+                               
+                                <div class="form-cart form-topbar position-absolute">
+                                    <form action="#">
+                                        <div class="text-center">
+                                            <h3 class="text-uppercase fs-4 fw-bold mb-1">
+                                                Giỏ hàng</h3>
+                                            <p class="desc fs-5">Danh sách các sản phẩm có trong giỏ hàng</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img style="height: 90px; object-fit: cover; " src="./assets/images/empty_cart.jpg" title="Chưa có sản phẩm" alt="">
+                                            <h3 class="fs-4 my-4">Hiện chưa có sản phẩm</h3>
+                                        </div>
+                                        <div style="border-top: 1px solid #d6d6d6; 
+                                        border-bottom: 1px solid #d6d6d6; padding: 1rem 0;"
+                                         class="d-flex justify-content-between align-items-center
+                                        fs-4">
+                                            <span>Tổng tiền</span>
+                                            <span style="color: var(--primaryColor);" class="cart-price">0đ</span>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <button class="btn btn-view-cart">
+                                                Xem giỏ hàng</button>
+                                            <button class="btn btn-checkout-cart">
+                                                Thanh toán</button>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link btn-topbar-user">
+                                    <i class="ti-user"></i>
+                                </a>
+                                <div class="form-login form-topbar position-absolute">
+                                    <form action="#">
+                                        <div class="text-center">
+                                            <h3 class="text-uppercase fs-4 fw-bold mb-1">
+                                                Đăng nhập tài khoản</h3>
+                                            <p class="desc fs-5">Nhập email và mật khẩu của bạn để đăng nhập</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <input class="login-info login-email" type="text" 
+                                            name="email" placeholder="Email">
+                                            <i class="ti-email"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <input class="login-info login-pwd" type="password" 
+                                            name="pwd" placeholder="Mật khẩu">
+                                            <i class="ti-lock"></i>
+                                        </div>
+                                        <button class="btn btn-login">Đăng nhập</button>
+                                        <div class="text-center">
+                                            <div class="mt-3 fs-5"><span style="color: grey;">Chưa có tài khoản?</span>
+                                            <a href="#" class="btn-register">Tạo tài khoản</a></div>
+                                            <div class="mt-3 fs-5"><span style="color: grey;">Quên mật khẩu?</span>
+                                                <a href="#" class="btn-register">Khôi phục mật khẩu</a></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link
+                                btn-topbar-list">
+                                <i class="ti-align-right"></i>
+                                </a>
+                                <div class="form-topbar-list
+                                form-topbar position-absolute">
+                                    <div class="d-flex align-items-center
+                                    justify-content-between mb-5">
+                                        <a href="#" class="fs-2 close-topbar-list">
+                                            <i class="ti-close"></i></a>
+                                        <h3 class="fw-bold">Sthings</h3>
+                                    </div>
+                                    <ul>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Trang chủ</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Shop</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Về chúng tôi</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Bộ sưu tập & Sản phẩm nổi bật</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">New Arrival</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Sản phẩm hot trend</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Top feedback</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Blog</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Đăng nhập</a></li>
+                                        <li class="py-2">
+                                            <a href="#" class="d-block w-100">Đăng ký</a></li>
+                                    </ul>
+                                    <div class="mt-5">
+                                        <ul style="color: #727272;">
+                                            <li>(+89) 971603963</li>
+                                            <li>sthings-clothing@gmail.com</li>
+                                            <li>Thi tran Yen My, Yen My, Hung Yen</li>
+                                        </ul>
+                                        <ul class="d-flex align-items-center mt-5 socials">
+                                            <li class="me-5"><a href="#" class="fs-3">
+                                                <i class="ti-facebook"></i></a></li>
+                                            <li class="me-5"><a href="#" class="fs-3">
+                                                <i class="ti-instagram"></i></a></li>
+                                            <li class="me-5"><a href="#" class="fs-3">
+                                                <i class="ti-youtube"></i></a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <div class="container-fluid">
+                    <div class="row h-100">
+                        <div class="nav-categories position-relative col-lg-3">
+                            <a style="padding: 1rem 2rem;" href="#" class="btn btn-nav-categories
+                            d-flex align-items-center h-100">
+                                <i style="font-weight: bold" class="ti-align-left"></i>
+                                <h3 style="flex: 2">Danh mục sản phẩm</h3>
+                                <i class="ti-angle-down"></i>
+                            </a>
+                            <ul class="nav-list nav-detail-categories position-absolute">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Áo</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo sơ mi
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo tank top
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo thun
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo len
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo nỉ
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo khoác
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo phao
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Quần</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần short
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần âu
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần baggy
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần ống rộng
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Giày</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Giày Sneaker
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Giày lười
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Phụ kiện</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Kính mắt
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Thắt lưng
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Trang sức
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Tất
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Mũ</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Mũ lưỡi trai
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Mũ len
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Ba lô - Túi - Ví</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Ba lô
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Túi
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Ví
+                                        </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-list nav-list-categories d-flex align-items-center col-lg-9">
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Áo</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Quần</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Giày</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Phụ kiện</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Mũ</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Ba lô - Túi - Ví</span>
+                            </a></li>
+                            <li class="nav-item text-center flex-fill
+                            "><a href="#" class="nav-link btn-nav-sale">
+                                <span>Giá đặc biệt</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="hero-content col-lg-6">
+                        <h3 class="hero-title">
+                            Khám phá các sản phẩm tốt nhất tại Sthings
+                        </h3>
+                        <p class="hero-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi similique labore qui suscipit enim eaque debitis laudantium maxime ea.
+                        </p>
+                        <a href="./assets/html/shop.html" class="btn btn-into-shop">SHOP NOW</a>
+                        <div class="wrap-btn-slide">
+                            <a href="#" class="btn-navigate-slide btn-prev-slide">
+                                <i class="ti-arrow-circle-left"></i></a>
+                            <a href="#" class="btn-navigate-slide btn-next-slide">
+                                <i class="ti-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-slides col-lg-6">
+                        <div class="hero-slides-wrap">
+                            <div class="slide">
+                                <img src="./assets/images/img_1.jpg" class="slide-img" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/images/img_2.jpg" class="slide-img" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/images/img_3.jpg" class="slide-img" alt="">
+                            </div>
+                        </div>
+                        <div class="hero-brand">
+                            <div class="hero-socials">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="ti-instagram"></i></a>
+                                <a href="#"><i class="ti-youtube"></i></a>
+                            </div>
+                            <div class="hero-options">
+                                <a href="#"><i class="ti-email"></i></a>
+                                <a href="#"><i class="ti-arrow-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #region old slide -->
+                    <!-- <div class="hero-slides col-lg-6">
+                        <div class="slide">
+                            <img src="./assets/images/img_1.jpg" class="slide-img" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/images/img_2.jpg" class="slide-img" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/images/img_3.jpg" class="slide-img" alt="">
+                        </div>
+                    </div> -->
+                    <!-- #endregion -->
+                </div>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title-wrap">
+                            <h3 class="title">Bộ sưu tập của Sthings</h3>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                        </div>
+                        <div class="collection-img-wrap">
+                            <a href="#">
+                                <img src="./assets/images/img_1.jpg" class="collection-img" alt="">
+                                <div class="overlay"></div>
+                                <div class="collection-btn-wrap d-flex justify-content-center
+                                align-items-center">
+                                    <button class="btn btn-collection">For Man</button>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/img_1.jpg" class="collection-img" alt="">
+                                <div class="overlay"></div>
+                                <div class="collection-btn-wrap d-flex justify-content-center
+                                align-items-center">
+                                    <button class="btn btn-collection">For Woman</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="title-wrap">
+                            <h3 class="title">Sản phẩm nổi bật</h3>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                        </div>
+                        <div class="popular-slides">
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="arrival">
+            <div class="container-fluid">
+                <div class="title-wrap">
+                    <h3 class="title">New arrival</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                </div>
+                <ul class="nav nav-pills nav-arrival mb-3" id="arrival-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="arrival-all-tab" data-bs-toggle="pill" 
+                      data-bs-target="#arrival-all" type="button" role="tab" aria-controls="arrival-all" 
+                      aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="arrival-man-tab" data-bs-toggle="pill" 
+                      data-bs-target="#arrival-man" type="button" role="tab" aria-controls="arrival-man" 
+                      aria-selected="false">Man</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="arrival-woman-tab" data-bs-toggle="pill"
+                       data-bs-target="#arrival-woman" type="button" role="tab" aria-controls="arrival-woman" 
+                       aria-selected="false">Woman</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="arrival-unisex-tab" data-bs-toggle="pill"
+                         data-bs-target="#arrival-unisex" type="button" role="tab" aria-controls="arrival-unisex" 
+                         aria-selected="false">Unisex</button>
+                      </li>
+                </ul>
+                <div class="tab-content" id="arrival-tabContent">
+                    <div class="tab-pane fade show active" id="arrival-all" role="tabpanel" 
+                    aria-labelledby="arrival-all-tab">
+                        <div class="products">
+                            <!-- #region Tab All Product -->
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="./assets/html/detail_product.html" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #endregion -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="arrival-man" role="tabpanel"
+                     aria-labelledby="arrival-man-tab">
+                        <div class="products">
+                            <div class="product">
+                                <img src="./assets/images/img_2.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="arrival-woman" role="tabpanel"
+                     aria-labelledby="arrival-woman-tab">
+                        <div class="products">
+                            <div class="product">
+                                <img src="./assets/images/img_2.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="arrival-unisex" role="tabpanel"
+                    aria-labelledby="arrival-unisex-tab">
+                        <div class="products">
+                            <div class="product">
+                                <img src="./assets/images/img_3.jpg" class="product-img" alt="">
+                                <div class="product-content">
+                                    <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                    <span class="product-price">350,000đ</span>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="product-optionals">
+                                    <div class="optionals d-flex align-items-center
+                                    justify-content-center">
+                                        <a href="#" class="optional" title="Xem nhanh">
+                                            <i class="ti-zoom-in"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                            <i class="ti-shopping-cart"></i></a>
+                                        <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                            <i class="ti-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-5">
+                    <a href="#" class="btn-primary btn-more">Xem thêm</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="hot-trend">
+            <div class="container-fluid">
+                <div class="title-wrap">
+                    <h3 class="title">Hot trending</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                </div>
+                <div class="position-relative">
+                    <div class="hottrend-products">
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <a href="#" class="btn-arrow-slide btn-arrow-left btn-back-trend">
+                            <i class="ti-angle-left"></i></a>
+                        <a href="#" class="btn-arrow-slide btn-arrow-right btn-next-trend">
+                            <i class="ti-angle-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="text-center p-5">
+                    <a href="#" class="btn-primary btn-more">Xem thêm</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container-fluid">
+                <div class="title-wrap">
+                    <h3 class="title">Top feedback</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                </div>
+                <div class="position-relative">
+                    <div class="feedback-products">
+                        <div class="product feedback-product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="feedback-content">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>
+                                        <a href="#" class="feedback-heart">
+                                            <i class="ti-heart"></i></a>
+                                        <span class="feedback-likes">247</span>
+                                        <span>like</span>
+                                    </span>
+                                    <span><i class="ti-share"></i></span>
+                                </div>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center mb-2">
+                                    <span class="feedback-label">Tác giả: </span>
+                                    <a href="#" class="feedback-name fw-bold">Đặng Hoàng Long</a></h3>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center">
+                                    <span class="feedback-label">Sản phẩm: </span>
+                                    <a href="#" class="product-name">Áo thun Sthings</a></h3>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product feedback-product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="feedback-content">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>
+                                        <a href="#" class="feedback-heart">
+                                            <i class="ti-heart"></i></a>
+                                        <span class="feedback-likes">247</span>
+                                        <span>like</span>
+                                    </span>
+                                    <span><i class="ti-share"></i></span>
+                                </div>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center mb-2">
+                                    <span class="feedback-label">Tác giả: </span>
+                                    <a href="#" class="feedback-name fw-bold">Đặng Hoàng Long</a></h3>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center">
+                                    <span class="feedback-label">Sản phẩm: </span>
+                                    <a href="#" class="product-name">Áo thun Sthings</a></h3>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product feedback-product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="feedback-content">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>
+                                        <a href="#" class="feedback-heart">
+                                            <i class="ti-heart"></i></a>
+                                        <span class="feedback-likes">247</span>
+                                        <span>like</span>
+                                    </span>
+                                    <span><i class="ti-share"></i></span>
+                                </div>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center mb-2">
+                                    <span class="feedback-label">Tác giả: </span>
+                                    <a href="#" class="feedback-name fw-bold">Đặng Hoàng Long</a></h3>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center">
+                                    <span class="feedback-label">Sản phẩm: </span>
+                                    <a href="#" class="product-name">Áo thun Sthings</a></h3>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product feedback-product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="feedback-content">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>
+                                        <a href="#" class="feedback-heart">
+                                            <i class="ti-heart"></i></a>
+                                        <span class="feedback-likes">247</span>
+                                        <span>like</span>
+                                    </span>
+                                    <span><i class="ti-share"></i></span>
+                                </div>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center mb-2">
+                                    <span class="feedback-label">Tác giả: </span>
+                                    <a href="#" class="feedback-name fw-bold">Đặng Hoàng Long</a></h3>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center">
+                                    <span class="feedback-label">Sản phẩm: </span>
+                                    <a href="#" class="product-name">Áo thun Sthings</a></h3>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product feedback-product">
+                            <img src="./assets/images/img_1.jpg" class="product-img" alt="">
+                            <div class="feedback-content">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>
+                                        <a href="#" class="feedback-heart">
+                                            <i class="ti-heart"></i></a>
+                                        <span class="feedback-likes">247</span>
+                                        <span>like</span>
+                                    </span>
+                                    <span><i class="ti-share"></i></span>
+                                </div>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center mb-2">
+                                    <span class="feedback-label">Tác giả: </span>
+                                    <a href="#" class="feedback-name fw-bold">Đặng Hoàng Long</a></h3>
+                                <h3 class="fs-4 d-flex justify-content-between align-items-center">
+                                    <span class="feedback-label">Sản phẩm: </span>
+                                    <a href="#" class="product-name">Áo thun Sthings</a></h3>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <a href="#" class="btn-arrow-slide btn-arrow-left btn-back-feedback">
+                            <i class="ti-angle-left"></i></a>
+                        <a href="#" class="btn-arrow-slide btn-arrow-right btn-next-feedback">
+                            <i class="ti-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="text-center p-5">
+                    <a href="#" class="btn-primary btn-more">Xem thêm</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container-fluid">
+                <div class="about-wrap">
+                    <div class="about-content">
+                        <div class="title-wrap">
+                            <h3 class="title">About</h3>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit libero assumenda! Eos placeat repellat maxime magni nihil, excepturi, distinctio magnam quos perspiciatis molestiae assumenda iusto consequatur illo, officia fuga aperiam sint dolores blanditiis a hic voluptas. Rem sequi fuga totam iure vitae quibusdam officia. Cumque sit nam doloribus veritatis.</p>
+                        <div class="text-center p-5">
+                            <a href="#" class="btn-primary btn-more">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container-fluid">
+                <div class="title-wrap">
+                    <h3 class="title">Blog</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam!</p>
+                </div>
+                <div class="articles">
+                    <div class="article">
+                        <a href="#" class="article-img-wrap">
+                            <img class="article-img" src="./assets/images/img_3.jpg" alt="">
+                            <div class="article-time">
+                                2021/07/22
+                            </div>
+                        </a>
+                        <div class="article-content">
+                            <a href="#" class="article-title">7 lý do chọn nike là hãng được săn đón nhất năm 2021</a>
+                            <a href="#" class="article-link">Đọc ngay</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="article-img-wrap">
+                            <img class="article-img" src="./assets/images/img_3.jpg" alt="">
+                            <div class="article-time">
+                                2021/07/22
+                            </div>
+                        </a>
+                        <div class="article-content">
+                            <a href="#" class="article-title">7 lý do chọn nike là hãng được săn đón nhất năm 2021</a>
+                            <a href="#" class="article-link">Đọc ngay</a>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <a href="#" class="article-img-wrap">
+                            <img class="article-img" src="./assets/images/img_3.jpg" alt="">
+                            <div class="article-time">
+                                2021/07/22
+                            </div>
+                        </a>
+                        <div class="article-content">
+                            <a href="#" class="article-title">7 lý do chọn nike là hãng được săn đón nhất năm 2021</a>
+                            <a href="#" class="article-link">Đọc ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-5">
+                    <a href="#" class="btn-primary btn-more">Xem thêm</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-item d-flex align-items-center">
+                    <h3 class="footer-brand">Sthings</h3>
+                </div>
+                <div class="footer-item">
+                    <h3>Thông tin</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Hướng dẫn đổi trả</a></li>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách giao hàng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Về chúng tôi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, quod?</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li><i class="far fa-clock"></i>
+                        <span>Thứ 2 - Chủ nhật: 7:00 - 23:00</span></li>
+                        <li><i class="far fa-envelope"></i>
+                        <span>danglong2407@gmail.com</span></li>
+                        <li><i class="fas fa-phone-volume"></i>
+                        <span>(+89) 971603963</span></li>
+                        <li><i class="fas fa-home"></i>
+                        <span>Ông Tố - Thị trấn Yên Mỹ - Huyện Yên Mỹ - Tỉnh Hưng Yên</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        
+        <div class="copyright d-flex align-items-center
+         justify-content-between" style="background: #2a2a2a; color: grey;
+         border-top: 1px solid grey; padding: 1rem 7rem; font-size: 1.4rem;">
+            <span class="fs-5">Copyright &copy; 2021 Sthings. Powered by <a href="#" style="text-decoration: underline
+                ;text-transform: uppercase">Long Dang</a></span>
+            <ul class="d-flex align-items-center">
+                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                <li><a href="#"><i class="ti-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <a href="#" class="btn-primary btn-scroll-top"><i class="ti-arrow-up"></i></a>   
+    </div>
+
+
+
+
+
+
+
+ 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

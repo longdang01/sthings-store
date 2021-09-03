@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthings</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="../icons/themify-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Slide -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+    <div id="shop-page" class="wrapper">
+        <header class="header">
+            <div class="header-topbar">
+                <div class="container-fluid">
+                    <div class="topbar row d-flex align-items-center">
+                        <h3 class="header-brand col-lg-3"><a href="../../index.html">Sthings</a></h3>
+                        <div style="padding: 1rem 0" class="header-search 
+                        d-flex align-items-center col-lg-6">
+                            <div class="search-categories d-flex align-items-center
+                            justify-content-center">
+                                <div class="topbar-categories position-relative">
+                                    <a href="#" class="d-flex align-items-center
+                                    justify-content-between btn btn-select-categories">
+                                        <span class="select-categories-focus">
+                                            Chọn danh mục</span>
+                                        <i class="ti-angle-down mt-1"></i>
+                                    </a>
+                                    <ul class="nav-list nav-topbar-categories">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Áo</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Quần</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Giày</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Phụ kiện</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Mũ</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Balo - Túi - Ví</a></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tất cả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search-destination d-flex align-items-center 
+                            flex-fill border-start-0">
+                                <input type="text" class="keyword-destination
+                                flex-fill" placeholder="Tìm kiếm sản phẩm...">
+                                <button type="button" class="btn 
+                                btn-dark btn-topbar-search">Tìm kiếm</button>
+                            </div>
+                        </div>
+    
+                        <ul class="nav-list nav-topbar-options
+                        d-flex justify-content-end col-lg-3">
+                            <li class="nav-item"><a href="#" class="nav-link 
+                                btn-topbar-cart position-relative">
+                                <i class="ti-shopping-cart"></i>
+                                <span class="topbar-cart-amount
+                                d-flex justify-content-center align-items-center">0</span></a>
+                               
+                                <div class="form-cart form-topbar position-absolute">
+                                    <form action="#">
+                                        <div class="text-center">
+                                            <h3 class="text-uppercase fs-4 fw-bold mb-1">
+                                                Giỏ hàng</h3>
+                                            <p class="desc fs-5">Danh sách các sản phẩm có trong giỏ hàng</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img style="height: 90px; object-fit: cover; " src="../images/empty_cart.jpg" title="Chưa có sản phẩm" alt="">
+                                            <h3 class="fs-4 my-4">Hiện chưa có sản phẩm</h3>
+                                        </div>
+                                        <div style="border-top: 1px solid #d6d6d6; 
+                                        border-bottom: 1px solid #d6d6d6; padding: 1rem 0;"
+                                         class="d-flex justify-content-between align-items-center
+                                        fs-4">
+                                            <span>Tổng tiền</span>
+                                            <span style="color: var(--primaryColor);" class="cart-price">0đ</span>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <button class="btn btn-view-cart">
+                                                Xem giỏ hàng</button>
+                                            <button class="btn btn-checkout-cart">
+                                                Thanh toán</button>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link btn-topbar-user">
+                                    <i class="ti-user"></i>
+                                </a>
+                                <div class="form-login form-topbar position-absolute">
+                                    <form action="#">
+                                        <div class="text-center">
+                                            <h3 class="text-uppercase fs-4 fw-bold mb-1">
+                                                Đăng nhập tài khoản</h3>
+                                            <p class="desc fs-5">Nhập email và mật khẩu của bạn để đăng nhập</p>
+                                        </div>
+                                        <div class="position-relative">
+                                            <input class="login-info login-email" type="text" 
+                                            name="email" placeholder="Email">
+                                            <i class="ti-email"></i>
+                                        </div>
+                                        <div class="position-relative">
+                                            <input class="login-info login-pwd" type="password" 
+                                            name="pwd" placeholder="Mật khẩu">
+                                            <i class="ti-lock"></i>
+                                        </div>
+                                        <button class="btn btn-login">Đăng nhập</button>
+                                        <div class="text-center">
+                                            <div class="mt-3 fs-5"><span style="color: grey;">Chưa có tài khoản?</span>
+                                            <a href="#" class="btn-register">Tạo tài khoản</a></div>
+                                            <div class="mt-3 fs-5"><span style="color: grey;">Quên mật khẩu?</span>
+                                                <a href="#" class="btn-register">Khôi phục mật khẩu</a></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link
+                                btn-topbar-list">
+                                <i class="ti-align-right"></i>
+                                </a>
+                                <div class="form-topbar-list
+                                form-topbar position-absolute">
+                                    <div class="d-flex align-items-center
+                                    justify-content-between mb-5">
+                                        <a href="#" class="fs-2 close-topbar-list">
+                                            <i class="ti-close"></i></a>
+                                        <h3 class="fw-bold">Sthings</h3>
+                                    </div>
+                                    <ul>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Trang chủ</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Shop</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Về chúng tôi</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Bộ sưu tập & Sản phẩm nổi bật</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">New Arrival</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Sản phẩm hot trend</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Top feedback</a></li>
+                                        <li class="py-3">
+                                            <a href="#" class="d-block w-100">Blog</a></li>
+                                    </ul>
+                                    <div class="mt-5">
+                                        <ul style="color: #727272;">
+                                            <li>(+89) 971603963</li>
+                                            <li>sthings-clothing@gmail.com</li>
+                                            <li>Thi tran Yen My, Yen My, Hung Yen</li>
+                                        </ul>
+                                        <ul class="d-flex align-items-center mt-5 socials">
+                                            <li class="me-5"><a href="#" class="fs-3">
+                                                <i class="ti-facebook"></i></a></li>
+                                            <li class="me-5"><a href="#" class="fs-3">
+                                                <i class="ti-instagram"></i></a></li>
+                                            <li class="me-5"><a href="#" class="fs-3">
+                                                <i class="ti-youtube"></i></a></li>
+                                        </ul>
+
+                                    </div>
+
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <div class="container-fluid">
+                    <div class="row h-100">
+                        <div class="nav-categories position-relative col-lg-3">
+                            <a style="padding: 1rem 2rem;" href="#" class="btn btn-nav-categories
+                            d-flex align-items-center h-100">
+                                <i style="font-weight: bold" class="ti-align-left"></i>
+                                <h3 style="flex: 2">Danh mục sản phẩm</h3>
+                                <i class="ti-angle-down"></i>
+                            </a>
+                            <ul class="nav-list nav-detail-categories position-absolute">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Áo</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo sơ mi
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo tank top
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo thun
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo len
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo nỉ
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo khoác
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Áo phao
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Quần</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần short
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần âu
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần baggy
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Quần ống rộng
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Giày</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Giày Sneaker
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Giày lười
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Phụ kiện</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Kính mắt
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Thắt lưng
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Trang sức
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Tất
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Mũ</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Mũ lưỡi trai
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Mũ len
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-flex 
+                                    align-items-center justify-content-between">
+                                    <span>Ba lô - Túi - Ví</span>
+                                    <i class="ti-angle-right"></i></a>
+                                    <ul class="nav-list nav-sub-categories position-absolute">
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Ba lô
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Túi
+                                        </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">
+                                            Ví
+                                        </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-list nav-list-categories d-flex align-items-center col-lg-9">
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Áo</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Quần</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Giày</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Phụ kiện</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Mũ</span>
+                            </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">
+                                <span>Ba lô - Túi - Ví</span>
+                            </a></li>
+                            <li class="nav-item text-center flex-fill
+                            "><a href="#" class="nav-link btn-nav-sale">
+                                <span>Giá đặc biệt</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="shop-wrap">
+            <div class="shop-breadcrumb">
+                <nav aria-label="breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../../index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                        </ol>
+                    </nav>
+                </nav>
+            </div>
+            <div class="shop-main">
+                <div class="shop-filter">
+                    <div class="shop-search d-flex justify-content-between 
+                    align-items-center">
+                        <input style="flex:2; border: none; outline: none;"
+                         type="text" placeholder="Tìm kiếm sản phẩm">
+                        <a href="#" class="btn-shop-search"><i class="ti-search"></i></a>
+                    </div>
+                    <div>
+                        <div class="shop-filter-item mb-5">
+                            <h3 class="filter-item-name fw-bold">Categories</h3>
+                            <div>
+                                <div class="accordion accordion-flush" id="accordion-type">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header d-flex align-items-center"
+                                       id="accordion-type-all">
+                                        <a href="#" class="accordion-link accordion-link-focus"
+                                        >Tất cả</a>
+                                        <button class="accordion-btn collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#type-all" 
+                                        aria-expanded="false" aria-controls="type-all">
+                                            <i class="ti-angle-down"></i>
+                                        </button>
+                                      </h2>
+
+                                      <div id="type-all" class="accordion-collapse collapse" 
+                                      aria-labelledby="accordion-type-all" data-bs-parent="#accordion-type">
+                                        <div class="accordion-body">
+                                            <!-- Accordion Sub -->
+                                            <div class="accordion accordion-flush" id="accordion-type-sub">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header d-flex align-items-center"
+                                                   id="accordion-type-all-shirt">
+                                                    <a href="#" class="accordion-sub-link"
+                                                    >Áo</a>
+                                                    <button class="accordion-btn collapsed" type="button" 
+                                                    data-bs-toggle="collapse" data-bs-target="#type-all-shirt" 
+                                                    aria-expanded="false" aria-controls="type-all-shirt">
+                                                        <i class="ti-angle-down"></i>
+                                                    </button>
+                                                  </h2>
+                                                  <div id="type-all-shirt" class="accordion-collapse collapse" 
+                                                  aria-labelledby="accordion-type-all-shirt" data-bs-parent="#accordion-type-sub">
+                                                    <div class="accordion-body">
+                                                        <ul class="type-sub-content">
+                                                            <li><a href="#">T-shirt</a></li>
+                                                            <li><a href="#">Vest</a></li>
+                                                            <li><a href="#">Gile</a></li>
+                                                            <li><a href="#">Tank top</a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header d-flex align-items-center"
+                                                     id="accordion-type-all-pants">
+                                                      <a href="#" class="accordion-sub-link"
+                                                      >Quần</a>
+                                                      <button class="accordion-btn collapsed" type="button" 
+                                                      data-bs-toggle="collapse" data-bs-target="#type-all-pants" 
+                                                      aria-expanded="false" aria-controls="type-all-pants">
+                                                          <i class="ti-angle-down"></i>
+                                                      </button>
+                                                    </h2>
+                                                    <div id="type-all-pants" class="accordion-collapse collapse" 
+                                                    aria-labelledby="accordion-type-all-pants" data-bs-parent="#accordion-type-sub">
+                                                      <div class="accordion-body">
+                                                          <ul class="type-sub-content">
+                                                              <li><a href="#">Âu</a></li>
+                                                              <li><a href="#">Trouser</a></li>
+                                                              <li><a href="#">Short</a></li>
+                                                          </ul>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordion-type">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header d-flex align-items-center"
+                                       id="accordion-type-man">
+                                        <a href="#" class="accordion-link">Nam</a>
+                                        <button class="accordion-btn collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#type-man" 
+                                        aria-expanded="false" aria-controls="type-man">
+                                            <i class="ti-angle-down"></i>
+                                        </button>
+                                      </h2>
+
+                                      <div id="type-man" class="accordion-collapse collapse" 
+                                      aria-labelledby="accordion-type-man" data-bs-parent="#accordion-type">
+                                        <div class="accordion-body">
+                                            Nam
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordion-type">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header d-flex align-items-center"
+                                       id="accordion-type-woman">
+                                        <a href="#" class="accordion-link">Nữ</a>
+                                        <button class="accordion-btn collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#type-woman" 
+                                        aria-expanded="false" aria-controls="type-woman">
+                                            <i class="ti-angle-down"></i>
+                                        </button>
+                                      </h2>
+
+                                      <div id="type-woman" class="accordion-collapse collapse" 
+                                      aria-labelledby="accordion-type-woman" data-bs-parent="#accordion-type">
+                                        <div class="accordion-body">
+                                            Nữ
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordion-type">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header d-flex align-items-center"
+                                       id="accordion-type-unisex">
+                                        <a href="#" class="accordion-link">Unisex</a>
+                                        <button class="accordion-btn collapsed" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#type-unisex" 
+                                        aria-expanded="false" aria-controls="type-unisex">
+                                            <i class="ti-angle-down"></i>
+                                        </button>
+                                      </h2>
+
+                                      <div id="type-unisex" class="accordion-collapse collapse" 
+                                      aria-labelledby="accordion-type-unisex" data-bs-parent="#accordion-type">
+                                        <div class="accordion-body">
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-filter-item mb-5">
+                            <h3 class="filter-item-name fw-bold">Giá</h3>
+                            <div class="filter-price">
+                                <div class="filter-price-slider mb-5">
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button class="btn-filter-price">Lọc</button>
+                                <div class="d-flex align-items-center fs-5">
+                                    <span class="me-3">Giá: </span>
+                                    <div class="filter-price-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-filter-item mb-5">
+                            <h3 class="filter-item-name fw-bold">Màu sắc</h3>
+                            <div class="filter-color">
+                                <div class="filter-color-item 
+                                d-flex justify-content-between align-items-center">
+                                    <span class="filter-color-type"></span>
+                                    <span class="filter-color-name">Đỏ</span>
+                                </div>
+                                <div class="filter-color-item 
+                                d-flex justify-content-between align-items-center">
+                                    <span class="filter-color-type"></span>
+                                    <span class="filter-color-name">Đỏ</span>
+                                </div>
+                                <div class="filter-color-item 
+                                d-flex justify-content-between align-items-center">
+                                    <span class="filter-color-type"></span>
+                                    <span class="filter-color-name">Đỏ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-filter-item mb-5">
+                            <h3 class="filter-item-name fw-bold">Size</h3>
+                            <div class="filter-size d-flex align-items-center flex-wrap">
+                                <a href="#" class="filter-size-item">XXL</a>
+                                <a href="#" class="filter-size-item">XL</a>
+                                <a href="#" class="filter-size-item">L</a>
+                                <a href="#" class="filter-size-item">M</a>
+                                <a href="#" class="filter-size-item">S</a>
+                                <a href="#" class="filter-size-item">XS</a>
+                            </div>
+                        </div>
+                        <div class="shop-filter-item mb-5">
+                            <h3 class="filter-item-name fw-bold">Brands</h3>
+                            <div class="filter-brand d-flex flex-column">
+                                <div class="filter-brand-item d-flex align-items-center">
+                                    <input type="checkbox" class="filter-brand-check" />
+                                    <label for="#" class="lbl-brand">Sthings</label>
+                                </div>
+                                <div class="filter-brand-item d-flex align-items-center">
+                                    <input type="checkbox" class="filter-brand-check" />
+                                    <label for="#" class="lbl-brand">Chanel</label>
+                                </div>
+                                <div class="filter-brand-item d-flex align-items-center">
+                                    <input type="checkbox" class="filter-brand-check" />
+                                    <label for="#" class="lbl-brand">Dior</label>
+                                </div>
+                                <div class="filter-brand-item d-flex align-items-center">
+                                    <input type="checkbox" class="filter-brand-check" />
+                                    <label for="#" class="lbl-brand">Clothes</label>
+                                </div>
+                                <div class="filter-brand-item d-flex align-items-center
+                                justify-content-between">
+                                    <input style="padding: .35rem" type="text" 
+                                    placeholder="Brand khác...">
+                                    <button class="btn-filter-brand">Lọc</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-filter-item mb-5">
+                            <h3 class="shop-brand-name fw-bold text-uppercase fs-4">Theo dõi chúng tôi</h3>
+                            <div class="shop-brand">
+                                <img src="../images/img_1.jpg" class="shop-brand-img" alt="">
+                                <div class="overlay"></div>
+                                <ul class="shop-socials">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-products">
+                    <div style="height: 46px; margin-bottom: 3rem;" class="d-flex align-items-center justify-content-between">
+                        <span>Tất cả 10 kết quả</span>
+                        <div>
+                            <span>Lọc: </span>
+                            <select name="sort" id="sort-product">
+                                <option value="">Mặc định</option>
+                                <option value="">Giá tăng dần</option>
+                                <option value="">Giá giảm dần</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product">
+                            <img src="../images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../images/img_1.jpg" class="product-img" alt="">
+                            <div class="product-content">
+                                <h3><a href="#" class="product-name">Áo phông cao cấp Sthings</a></h3>
+                                <span class="product-price">350,000đ</span>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="product-optionals">
+                                <div class="optionals d-flex align-items-center
+                                justify-content-center">
+                                    <a href="#" class="optional" title="Xem nhanh">
+                                        <i class="ti-zoom-in"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào giỏ hàng">
+                                        <i class="ti-shopping-cart"></i></a>
+                                    <a href="#" class="optional" title="Thêm vào danh sách yêu thích">
+                                        <i class="ti-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        
+
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-item d-flex align-items-center">
+                    <h3 class="footer-brand">Sthings</h3>
+                </div>
+                <div class="footer-item">
+                    <h3>Thông tin</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Hướng dẫn đổi trả</a></li>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách giao hàng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Về chúng tôi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, quod?</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li><i class="far fa-clock"></i>
+                        <span>Thứ 2 - Chủ nhật: 7:00 - 23:00</span></li>
+                        <li><i class="far fa-envelope"></i>
+                        <span>danglong2407@gmail.com</span></li>
+                        <li><i class="fas fa-phone-volume"></i>
+                        <span>(+89) 971603963</span></li>
+                        <li><i class="fas fa-home"></i>
+                        <span>Ông Tố - Thị trấn Yên Mỹ - Huyện Yên Mỹ - Tỉnh Hưng Yên</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        
+        <div class="copyright d-flex align-items-center
+         justify-content-between" style="background: #2a2a2a; color: grey;
+         border-top: 1px solid grey; padding: 1rem 7rem; font-size: 1.4rem;">
+            <span class="fs-5">Copyright &copy; 2021 Sthings. Powered by <a href="#" style="text-decoration: underline
+                ;text-transform: uppercase">Long Dang</a></span>
+            <ul class="d-flex align-items-center">
+                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                <li><a href="#"><i class="ti-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <a href="#" class="btn-primary btn-scroll-top"><i class="ti-arrow-up"></i></a>   
+    </div>
+
+
+
+
+
+
+
+ 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Js -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
